@@ -1,4 +1,4 @@
-name: run heat_stress_at_work_warning.py
+name: Scheduled Web Scraping
 
 on:
   schedule:
