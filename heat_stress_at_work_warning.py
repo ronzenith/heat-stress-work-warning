@@ -270,5 +270,5 @@ def main(start_date, end_date):
 if __name__ == "__main__":
     today = datetime.now()
     start_date = datetime(2024,10,10)
-    end_date = today
+    end_date = datetime(2024,10,18)
     main(start_date, end_date)
