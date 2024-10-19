@@ -24,17 +24,17 @@ jobs:
           
       - name: execute py script # run main.py
         env:
-          type: ${{ secrets.type }}
-          project_id: ${{ secrets.project_id }}
-          private_key_id: ${{ secrets.private_key_id }}
-          private_key: ${{ secrets.private_key }}
-          client_email: ${{ secrets.client_email }}
-          client_id: ${{ secrets.client_id }}
-          auth_uri: ${{ secrets.auth_uri }}
-          token_uri: ${{ secrets.token_uri }}
-          auth_provider_x509_cert_url: ${{ secrets.auth_provider_x509_cert_url }}
-          client_x509_cert_url: ${{ secrets.client_x509_cert_url }}
-          universe_domain: ${{ secrets.universe_domain }}
+          TYPE: ${{ secrets.type }}
+          PROJECT_ID: ${{ secrets.project_id }}
+          PRIVATE_KEY_ID: ${{ secrets.private_key_id }}
+          PRIVATE_KEY: ${{ secrets.private_key }}
+          CLIENT_EMAIL: ${{ secrets.client_email }}
+          CLIENT_ID: ${{ secrets.client_id }}
+          AUTH_URI: ${{ secrets.auth_uri }}
+          TOKEN_URI: ${{ secrets.token_uri }}
+          AUTH_PROVIDER_X509_CERT_URL: ${{ secrets.auth_provider_x509_cert_url }}
+          CLIENT_X509_CERT_URL: ${{ secrets.client_x509_cert_url }}
+          UNIVERSE_DOMAIN: ${{ secrets.universe_domain }}
         run: python heat_stress_at_work_warning.py
           
       - name: commit files
