@@ -110,7 +110,7 @@ def upload_to_google_sheets(dataframe, sheet_name):
     creds_json = os.environ.get('GOOGLE_SHEETS_CREDENTIALS')
     creds_dict = json.loads(creds_json)
     
-    creds = ServiceAccountCredentials.from_json_keyfile_name('C:/Users/User/Documents/self-learn/heat-stress-index-15bbb5903054.json', scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
     client = gspread.authorize(creds)
 
     # Create or open the Google Sheet and upload data
