@@ -14,15 +14,15 @@ jobs:
         uses: actions/checkout@v2 # checkout the repository content to github runner
 
       - name: setup python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v2
         with:
-          python-version: '3.9' # install the python version needed
+          python-version: '3.11' # install the python version needed
           
-      - name: install python packages
+      - name: install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          
+          pip install re requests BeautifulSoup pandas datetime urllib time logging gspread os oauth2client numpy  # Add any other dependencies needed
+        
       - name: execute py script # run main.py
         env:
           TYPE: ${{ secrets.type }}
