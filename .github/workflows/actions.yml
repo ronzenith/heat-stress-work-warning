@@ -21,7 +21,7 @@ jobs:
       - name: install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install re requests BeautifulSoup pandas datetime urllib time logging gspread os oauth2client numpy  # Add any other dependencies needed
+          pip install re requests BeautifulSoup pandas datetime urllib time logging gspread os oauth2client numpy json # Add any other dependencies needed
 
       - name: Set Google Sheets Credentials
         env:
