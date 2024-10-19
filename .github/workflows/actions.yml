@@ -2,7 +2,7 @@ name: Scheduled Web Scraping
 
 on:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '49 17 * * *'
   workflow_dispatch:
 
 jobs:
