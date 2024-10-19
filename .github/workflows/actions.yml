@@ -21,7 +21,7 @@ jobs:
       - name: install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install requests pandas urllib gspread oauth2client numpy beautifulsoup4 # Add any other dependencies needed
+          python -m pip install requests pandas gspread oauth2client numpy beautifulsoup4 # Add any other dependencies needed
           
       - name: execute py script # run main.py
         run: python heat_stress_at_work_warning.py
