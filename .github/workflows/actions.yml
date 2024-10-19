@@ -2,7 +2,7 @@ name: run heat_stress_at_work_warning.py
 
 on:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
